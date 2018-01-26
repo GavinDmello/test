@@ -1,8 +1,8 @@
-let DataModel = require('./index')
-let dataModel = new DataModel({
+let TestModule = require('./index')
+let test = new TestModule({
     dataPath : './data.txt'
 })
-dataModel.loadCustomerData()
-dataModel.on('ready', () => {
-    console.log(dataModel.getCustomersWithinDistance(100))
+test.loadCustomerData()
+test.on('ready', () => {
+    console.log(test.getCustomersWithinDistance(100))
 })

@@ -113,4 +113,20 @@ describe('checking Data class', () => {
 
     })
 
+
+    it('Testing invalid path on loadData', (done) => {
+        try {
+            let dataModel = new DataModel({
+                dataPath : './data.txt'
+            })
+            dataModel.getCustomersWithinDistance(100)
+
+        } catch (e) {
+            assert.isOk('Data not loaded error')
+        }
+
+        done()
+
+    })
+
 })
