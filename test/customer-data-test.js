@@ -58,7 +58,7 @@ describe('checking Data class', () => {
             })
             dataModel.loadCustomerData()
             dataModel.on('ready', () => {
-                let results = dataModel.getCustomerWithinDistance(60)
+                let results = dataModel.getCustomersWithinDistance(60)
                 expect(results).to.be.an('array')
                 expect(results[0]).to.be.ok
                 expect(results[0].user_id).to.be.ok

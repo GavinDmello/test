@@ -2,7 +2,7 @@ let DataModel = require('./index')
 let dataModel = new DataModel({
     dataPath : './data.txt'
 })
-dataModel.loadCustomerData('../da')
+dataModel.loadCustomerData()
 dataModel.on('ready', () => {
-    console.log(dataModel.getCustomerWithinDistance(100))
+    console.log(dataModel.getCustomersWithinDistance(100))
 })
