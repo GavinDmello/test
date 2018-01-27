@@ -114,7 +114,7 @@ describe('checking Data class', () => {
     })
 
 
-    it('Testing invalid path on loadData', (done) => {
+    it('Calling getCustomerWithinDistance without loadData', (done) => {
         try {
             let dataModel = new DataModel({
                 dataPath : './data.txt'
