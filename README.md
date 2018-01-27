@@ -27,4 +27,7 @@
 - `ready`
     
   Fired when the data has been loaded into memory
+  
+## Tests
+- `npm test`
  
